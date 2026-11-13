@@ -1,0 +1,20 @@
+{
+  "name": "design-forge",
+  "interface": {
+    "displayName": "Design Forge"
+  },
+  "plugins": [
+    {
+      "name": "design-forge",
+      "source": {
+        "source": "local",
+        "path": "./plugins/design-forge"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

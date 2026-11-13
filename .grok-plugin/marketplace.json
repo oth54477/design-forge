@@ -1,0 +1,16 @@
+{
+  "name": "design-forge",
+  "owner": {
+    "name": "Taehun Oh"
+  },
+  "plugins": [
+    {
+      "name": "design-forge",
+      "source": "./plugins/design-forge",
+      "description": "Discover a product interface, compare distinct visual directions, decide with the user, then build and check the approved design.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "design"
+    }
+  ]
+}

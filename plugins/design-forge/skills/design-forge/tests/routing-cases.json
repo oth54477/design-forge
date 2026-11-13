@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "id": "new-dashboard",
+      "prompt": "물류 운영팀용 분석 대시보드를 새로 만들어줘. 방향은 네가 정해.",
+      "expect_kind": "new",
+      "expect_mode": "A",
+      "expect_first_stage": "01 Discover",
+      "expect_code_now": false,
+      "skip_stages": [],
+      "must_not_open": [
+        "design",
+        "design-taste-frontend",
+        "brainstorming",
+        "imagegen-frontend-web",
+        "grill-me"
+      ],
+      "must_consider": []
+    },
+    {
+      "id": "existing-minor-spacing",
+      "prompt": "지금 로그인 화면 버튼 간격만 8px로 줄여줘. 시안 3개는 필요 없어.",
+      "expect_kind": "existing-minor",
+      "expect_mode": "C",
+      "expect_first_stage": "inspect",
+      "expect_code_now": false,
+      "skip_stages": [
+        "01 Discover",
+        "02 Explore",
+        "03 Decide",
+        "04 Design"
+      ],
+      "must_not_open": [
+        "design",
+        "brainstorming",
+        "taste-skill-v2",
+        "design-taste-frontend",
+        "design-director",
+        "grill-me",
+        "imagegen-frontend-web"
+      ],
+      "must_consider": [
+        "make-interfaces-feel-better",
+        "web-accessibility",
+        "aside-browser"
+      ]
+    }
+  ]
+}

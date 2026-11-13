@@ -1,0 +1,12 @@
+{
+  "name": "design-forge",
+  "version": "0.1.0",
+  "description": "Discover a product interface, compare distinct visual directions, decide with the user, then build and check the approved design.",
+  "license": "MIT",
+  "author": {
+    "name": "Taehun Oh",
+    "url": "https://github.com/oth54477"
+  },
+  "keywords": ["design", "ui", "ux"],
+  "skills": "./skills/"
+}

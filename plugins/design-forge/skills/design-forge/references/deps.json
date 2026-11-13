@@ -1,0 +1,329 @@
+{
+  "generated_from": "skill directory names and home-relative globs, 2026-11-13",
+  "rule": "inspect-deps.py resolves names under the user skill folders and globs under the home directory. availability is the kind of skill, not proof it exists here. A row printed absent is unavailable. Use fallback. Never claim a missing skill ran.",
+  "skills": [
+    {
+      "id": "deep-interview",
+      "requested_as": "deep-interview",
+      "availability": "installed",
+      "open_when": "DISCOVER, and only to borrow one-question targeting. Do not enter its OMC pipeline, state files, or execution-bridge menu.",
+      "do_not": "Do not hand Design Forge's build to deep-interview. That skill stops before implementation.",
+      "fallback": "The interview procedure in references/workflow.md stage 01.",
+      "names": [
+        "deep-interview"
+      ],
+      "globs": [
+        ".claude/plugins/cache/omc/**/skill-bodies/deep-interview/SKILL.md"
+      ]
+    },
+    {
+      "id": "grill-me",
+      "requested_as": "gril-me",
+      "availability": "stub",
+      "open_when": "Never via a skill tool. disable-model-invocation is true and the body is only 'Run a /grilling session.' No grilling skill file is installed.",
+      "do_not": "Do not report that a grilling session ran.",
+      "fallback": "Assumption challenge in references/workflow.md stage 01. grill-with-docs is the same stub plus a missing /domain-modeling handoff.",
+      "names": [
+        "grill-me"
+      ],
+      "globs": []
+    },
+    {
+      "id": "design-director",
+      "requested_as": "design-director",
+      "availability": "installed",
+      "open_when": "EXPLORE or an existing-major restyle, after the brief is confirmed, when you want its router to pick one installed style skill.",
+      "do_not": "If you open it, do not also open taste-skill-v2, design-taste-frontend, hallmark, frontend-design, or ui-ux-pro-max. It already forbids stacking style skills.",
+      "fallback": "Pick one row yourself from this file.",
+      "names": [
+        "design-director"
+      ],
+      "globs": []
+    },
+    {
+      "id": "emil-design-eng",
+      "requested_as": "emil-design-eng",
+      "availability": "installed",
+      "open_when": "BUILD or VALIDATE for motion decisions, press feedback, interruptibility, and a before/after review table.",
+      "do_not": "Do not open it during DISCOVER.",
+      "fallback": "make-interfaces-feel-better",
+      "names": [
+        "emil-design-eng"
+      ],
+      "globs": []
+    },
+    {
+      "id": "apple-design",
+      "requested_as": "apple-design",
+      "availability": "installed",
+      "open_when": "BUILD of gesture, sheet, drag, spring, or translucent-material interaction.",
+      "do_not": "Do not open it for a static data screen with no gesture.",
+      "fallback": "emil-design-eng for ordinary UI motion. Say Apple-specific gesture rules were not applied.",
+      "names": [
+        "apple-design"
+      ],
+      "globs": []
+    },
+    {
+      "id": "web-design-guidelines",
+      "requested_as": "web-design-guidlines",
+      "availability": "installed",
+      "open_when": "VALIDATE, or DESIGN when writing focus, hit-target, and form behavior. The requested spelling web-design-guidlines is not an installed id.",
+      "do_not": "Do not fetch the guidelines during DISCOVER.",
+      "fallback": "web-accessibility plus the checklist in references/workflow.md stage 06.",
+      "names": [
+        "web-design-guidelines"
+      ],
+      "globs": []
+    },
+    {
+      "id": "taste-skill-v2",
+      "requested_as": "taste-skill",
+      "availability": "collision",
+      "open_when": "EXPLORE when you need dealt directions. Marketing pages use the SKILL.md run. Dashboards, admin, and settings use references/app-screens.md only. Frontmatter name is design-taste-frontend, which collides with the agents copy.",
+      "do_not": "Do not open ~/.agents/skills/design-taste-frontend for a dashboard. That copy says it is not for dashboards, data tables, or multi-step product UI.",
+      "fallback": "frontend-design for a written direction, then comparable HTML. Do not invent draw.mjs output.",
+      "names": [],
+      "globs": [
+        ".claude/plugins/cache/taste-skill/**/skills/taste-skill/SKILL.md",
+        ".claude/plugins/cache/taste-skill/**/skills/taste-skill/references/app-screens.md"
+      ]
+    },
+    {
+      "id": "design-taste-frontend",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "EXPLORE of a landing page, portfolio, or marketing redesign only.",
+      "do_not": "Dashboards and product app screens.",
+      "fallback": "taste-skill-v2",
+      "names": [
+        "design-taste-frontend"
+      ],
+      "globs": []
+    },
+    {
+      "id": "design",
+      "requested_as": "design",
+      "availability": "installed",
+      "open_when": "The user asks for an architecture design document, technical spec, or PR plan.",
+      "do_not": "Visual design, mockups, or UI implementation. This skill writes design docs through writer and reviewer subagents.",
+      "fallback": "Stay in Design Forge. Do not pretend this skill produced a screen.",
+      "names": [
+        "design"
+      ],
+      "globs": []
+    },
+    {
+      "id": "frontend-design",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "EXPLORE fallback when taste-skill-v2 and design-director are both unavailable.",
+      "do_not": "Stack it on top of another style skill.",
+      "fallback": "Write three directions yourself using references/critique.md.",
+      "names": [
+        "frontend-design"
+      ],
+      "globs": []
+    },
+    {
+      "id": "impeccable",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "VALIDATE critique or audit of a built surface, one command only (critique or audit).",
+      "do_not": "Do not run its full command catalog. Do not let it replace the Direction gate.",
+      "fallback": "references/critique.md",
+      "names": [
+        "impeccable"
+      ],
+      "globs": []
+    },
+    {
+      "id": "web-accessibility",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "DESIGN or BUILD of forms, dialogs, menus, and keyboard behavior.",
+      "do_not": "Its related-skill link to responsive-design points at a file that is not installed.",
+      "fallback": "web-design-guidelines",
+      "names": [
+        "web-accessibility"
+      ],
+      "globs": []
+    },
+    {
+      "id": "make-interfaces-feel-better",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "BUILD detail pass: concentric radius, tabular numbers, hit area, optical alignment.",
+      "do_not": "Do not open it to choose a visual direction.",
+      "fallback": "emil-design-eng",
+      "names": [
+        "make-interfaces-feel-better"
+      ],
+      "globs": []
+    },
+    {
+      "id": "audit",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "VALIDATE when the user wants a written audit and no code changes.",
+      "do_not": "It documents issues and does not fix them.",
+      "fallback": "impeccable audit command, else references/workflow.md stage 06.",
+      "names": [
+        "audit"
+      ],
+      "globs": []
+    },
+    {
+      "id": "visual-verdict",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "VALIDATE when you have both an approved screenshot and an implementation screenshot.",
+      "do_not": "Do not use the compact shim under skills/visual-verdict as the procedure. Open the skill-bodies path.",
+      "fallback": "Stage 06 checklist. Say visual-verdict was not applied.",
+      "names": [
+        "visual-verdict"
+      ],
+      "globs": [
+        ".claude/plugins/cache/omc/**/skill-bodies/visual-verdict/SKILL.md"
+      ]
+    },
+    {
+      "id": "aside-browser",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "Any stage that must show or measure a real page. Read it and run aside guide before other browser tools.",
+      "do_not": "Do not claim a screenshot you did not take.",
+      "fallback": "agent-browser, then playwright MCP, then ego-browser. Name the fallback.",
+      "names": [
+        "aside-browser"
+      ],
+      "globs": []
+    },
+    {
+      "id": "agent-browser",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "aside-browser failed or is missing.",
+      "do_not": "Do not prefer it over aside-browser when aside-browser works.",
+      "fallback": "playwright MCP if connected, else static HTML only.",
+      "names": [
+        "agent-browser"
+      ],
+      "globs": []
+    },
+    {
+      "id": "imagine",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "Mood, material, or photography references on hosts that have image_gen. Read it before any image tool call.",
+      "do_not": "Do not generate labeled UI, charts, or tables as images. Those are HTML.",
+      "fallback": "Skip images. HTML prototypes are the comparable deliverable.",
+      "names": [
+        "imagine"
+      ],
+      "globs": []
+    },
+    {
+      "id": "imagegen-frontend-web",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "EXPLORE of a marketing page when the user wants image comps and the host can generate images.",
+      "do_not": "Product dashboards. Never call an image comp an implementation.",
+      "fallback": "Comparable HTML.",
+      "names": [
+        "imagegen-frontend-web"
+      ],
+      "globs": []
+    },
+    {
+      "id": "shadcn",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "BUILD and the project already uses shadcn, or a greenfield project is using the default stack.",
+      "do_not": "Do not add shadcn to a project that has another component system.",
+      "fallback": "The project's existing components.",
+      "names": [
+        "shadcn"
+      ],
+      "globs": []
+    },
+    {
+      "id": "tailwind-design-system",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "DESIGN tokens on a Tailwind v4 project, or a greenfield default-stack project.",
+      "do_not": "Do not apply its v4 recipe to a v3 or non-Tailwind project.",
+      "fallback": "Put tokens in the project's existing styling system.",
+      "names": [
+        "tailwind-design-system"
+      ],
+      "globs": []
+    },
+    {
+      "id": "mobile-native",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "BUILD or VALIDATE of a phone layout, sheet, or touch target.",
+      "do_not": "There is no installed skill named responsive-design.",
+      "fallback": "Stage 06 responsive checks. Say device hardware was not tested.",
+      "names": [
+        "mobile-native"
+      ],
+      "globs": []
+    },
+    {
+      "id": "break-ui",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "VALIDATE of data-heavy UI, after the happy path renders.",
+      "do_not": "Do not redesign from this skill. It reports breaks.",
+      "fallback": "Check empty, one-item, and long-string states yourself.",
+      "names": [
+        "break-ui"
+      ],
+      "globs": []
+    },
+    {
+      "id": "brainstorming",
+      "requested_as": null,
+      "availability": "installed",
+      "open_when": "Do not open it for a Design Forge run. Its architectural path blocks implementation skills and writes a different spec.",
+      "do_not": "Opening it splits ownership of the brief and the gates.",
+      "fallback": "Stage 01.",
+      "names": [
+        "brainstorming"
+      ],
+      "globs": []
+    },
+    {
+      "id": "responsive-design",
+      "requested_as": null,
+      "availability": "missing",
+      "open_when": "Never. Not installed. web-accessibility links to it anyway.",
+      "do_not": "Do not invent the skill.",
+      "fallback": "mobile-native and stage 06 breakpoints.",
+      "names": [],
+      "globs": []
+    },
+    {
+      "id": "visual-regression",
+      "requested_as": null,
+      "availability": "missing",
+      "open_when": "Never. No dedicated visual-regression skill is installed.",
+      "do_not": "Do not claim pixel baselines exist.",
+      "fallback": "Browser screenshots of the approved HTML and the built screen, then visual-verdict if both images exist.",
+      "names": [],
+      "globs": []
+    },
+    {
+      "id": "ux-research",
+      "requested_as": null,
+      "availability": "missing",
+      "open_when": "Never. No dedicated UX-research skill is installed.",
+      "do_not": "Do not invent interview scripts from a missing skill.",
+      "fallback": "Stage 01.",
+      "names": [],
+      "globs": []
+    }
+  ]
+}
